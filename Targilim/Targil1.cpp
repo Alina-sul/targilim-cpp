@@ -1,22 +1,7 @@
 #include <iostream>
+#include "../Headers/Targil1.hpp"
 using namespace std;
 
-//Types
-typedef struct Time {
-
-    int sec, min, hour;
-
-} Time;
-
-//Declaration
-void transformTime (int &sec, int &min, int &hour);
-void inputTime (Time **arr, int *arr_size);
-
-
-int main(){
-
-    return 0;
-}
 
 //Functions
 void transformTime (int &sec, int &min, int &hour) {
@@ -30,16 +15,16 @@ void transformTime (int &sec, int &min, int &hour) {
 
 void inputTime (Time **arr, int *arr_size) {
 
-    int n;
+    int size;
 
     cout << "Please enter size of array: " << endl;
-    cin >> n;
+    cin >> size;
 
-    Time *arr2 = new Time[n];
+    Time *arr2 = new Time[size];
 
     if(arr2 == NULL) return;
 
-    for(int i = 0; i < n; i++) {
+    for(int i = 0; i < size; i++) {
 
         cout << "index " << i << ": " << endl;
         cout << "Enter hours: " << endl;
@@ -55,6 +40,23 @@ void inputTime (Time **arr, int *arr_size) {
     }
 
     *arr = arr2;
+    *arr_size = size;
     delete[] arr2;
+
+}
+
+void test(){
+    cout<<"test";
+}
+void printTime (Time arr[], int size) {
+
+    for( int i = 0; i < size; i++) {
+
+        // cout << i << " : ";
+        // if(arr[i].hour != 0) cout << arr[i].hour;
+        // else  cout << "00"; 
+        // cout << ":" << arr[i].min << ":" << arr[i].sec << endl;
+
+    }
 
 }

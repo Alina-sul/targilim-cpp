@@ -1,3 +1,16 @@
+/*
+ * Circle Class created;
+ * Private:
+ * ~ Point on circle coordinates
+ * ~ Radius
+ * Public:
+ * ~ Getters/Setters
+ * ~ Basic Circle calculations
+ * ~ Print function to print all circle data
+ *
+ */
+
+
 #include <iostream>
 #include <cmath>
 #include "Targil3.h"

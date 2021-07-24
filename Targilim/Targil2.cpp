@@ -1,3 +1,9 @@
+/*
+ * Swap functions test;
+ * Clone function created to clone time element;
+ *
+ */
+
 #include <iostream>
 #include "../Headers/Targil2.h"
 #include "../Headers/Targil1.h"

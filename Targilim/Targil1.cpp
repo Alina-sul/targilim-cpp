@@ -1,9 +1,18 @@
+/*
+ * Using Time Struct to declare Time element;
+ * Functions:
+ * ~ transformTime: normalize time parameters ( in case sec, min > 60 and hours > 24 )
+ * ~ inputTime: user can input an array of time elements
+ * ~ printTime: prints array of time elements
+ *
+ */
+
+
 #include <iostream>
 #include "../Headers/Targil1.h"
 using namespace std;
 
 
-//Functions
 void transformTime (int &sec, int &min, int &hour) {
 
     int s = sec, m = min;

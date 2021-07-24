@@ -5,6 +5,7 @@
 #include "../Headers/All.h"
 #include "../Headers/Targil1.h"
 #include "../Headers/Targil2.h"
+#include "../Headers/Targil3.h"
 
 using namespace std;
 

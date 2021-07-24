@@ -4,6 +4,7 @@
 #include <iostream>
 #include "../Headers/All.h"
 #include "../Headers/Targil1.h"
+#include "../Headers/Targil2.h"
 
 using namespace std;
 
@@ -15,8 +16,7 @@ void All () {
 
     switch(targil){
 
-        case 1:
-        {
+        case 1: {
             Time *arr = NULL;
             int arr_size = 0;
             inputTime(&arr,arr_size);
@@ -24,8 +24,15 @@ void All () {
             break;
         }
 
-        case 2:
+        case 2: {
+            Time time = {34,12,16};
+            Time clone = cloneTime(time);
+            cout << "Cloned time is: " <<
+                clone.hour << " : " <<
+                clone.min << " : " <<
+                clone.sec << endl;
             break;
+        }
 
         case 3:
             break;

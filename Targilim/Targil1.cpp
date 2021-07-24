@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../Headers/Targil1.hpp"
+#include "../Headers/Targil1.h"
 using namespace std;
 
 
@@ -13,7 +13,7 @@ void transformTime (int &sec, int &min, int &hour) {
 
 }
 
-void inputTime (Time **arr, int *arr_size) {
+void inputTime (Time **arr, int &arr_size) {
 
     int size;
 
@@ -40,23 +40,24 @@ void inputTime (Time **arr, int *arr_size) {
     }
 
     *arr = arr2;
-    *arr_size = size;
+    arr_size = size;
+
     delete[] arr2;
 
 }
 
-void test(){
-    cout<<"test";
-}
 void printTime (Time arr[], int size) {
 
     for( int i = 0; i < size; i++) {
 
-        // cout << i << " : ";
-        // if(arr[i].hour != 0) cout << arr[i].hour;
-        // else  cout << "00"; 
-        // cout << ":" << arr[i].min << ":" << arr[i].sec << endl;
-
+        cout << "_" << i << "_" << endl;
+        if(arr[i].hour != 0) cout << arr[i].hour << " : ";
+        else  cout << "00";
+        if(arr[i].min != 0) cout << arr[i].min << " : ";
+        else  cout << "00 :";
+        if(arr[i].sec != 0) cout << arr[i].sec;
+        else  cout << "00";
+        cout << endl;
     }
 
 }

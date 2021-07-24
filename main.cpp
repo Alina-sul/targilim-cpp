@@ -1,11 +1,14 @@
 #include <iostream>
-#include "Headers/Targil1.hpp"
+#include "Headers/Targil1.h"
+
 using namespace std;
 
 
 int main(){
 
-    int x = 0, y = 0, c = 0;
-    test();
+    Time *arr = NULL;
+    int arr_size = 0;
+    inputTime(&arr,arr_size);
+    printTime(arr,arr_size);
     return 0;
 }

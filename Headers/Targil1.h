@@ -1,5 +1,5 @@
-#ifndef TIRGUL1_HPP 
-#define TIRGUL1_HPP 
+#ifndef TIRGUL1_H
+#define TIRGUL1_H
 
 //Types
 typedef struct Time {
@@ -10,8 +10,7 @@ typedef struct Time {
 
 //Declaration
 void transformTime (int &sec, int &min, int &hour);
-void inputTime (Time **arr, int *arr_size);
+void inputTime (Time **arr, int &arr_size);
 void printTime (Time arr[], int size);
-void test();
 
 #endif 

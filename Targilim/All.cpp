@@ -1,6 +1,3 @@
-//
-// Created by Alina Sul on 24/07/2021.
-//
 #include <iostream>
 #include "../Headers/All.h"
 #include "../Headers/Targil1.h"
@@ -35,8 +32,10 @@ void All () {
             break;
         }
 
-        case 3:
+        case 3:{
+            Targil3();
             break;
+        }
 
         case 4:
             break;

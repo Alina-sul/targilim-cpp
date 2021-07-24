@@ -1,7 +1,3 @@
-//
-// Created by Alina Sul on 24/07/2021.
-//
-
 #ifndef TARGILIM_TARGIL3_H
 #define TARGILIM_TARGIL3_H
 
@@ -12,14 +8,19 @@ class Circle {
     private:
         double index_x,index_y,radius;
     public:
-        Circle(double r);
-        Circle(double x, double y, double r);
+        Circle();
+        Circle(double x, double y);
         void SetAll(double x, double y, double r);
-        double GetAll();
-        double CircleArea();
-        double CirclePerimeter();
-        void PrintAllData();
-
+        void SetX(double x);
+        void SetY(double y);
+        //void SetRadius(double x, double y);
+        void GetAll(double &x, double &y, double &r) const;
+        double GetX() const;
+        double GetY() const;
+        double GetRadius() const;
+        double CircleArea() const;
+        double CircleCircumference() const;
+        void PrintAllData() const;
 
 };
 

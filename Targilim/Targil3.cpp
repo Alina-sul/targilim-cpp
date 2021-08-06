@@ -83,6 +83,8 @@ void Circle::PrintAllData() const {
 
 }
 
+Circle::~Circle() {}
+
 void Targil3() {
 
     Circle circle1;

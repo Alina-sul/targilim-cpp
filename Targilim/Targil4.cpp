@@ -150,14 +150,14 @@ void Targil4(){
     Queue q1(&n1,&n2);
     cout << "test q1 *******" << endl;
     q1.printQueue(&q1);
-//    cout << "test 'addNode' *******" << endl;
-//    Node n3("Eve", 50);
-//    q1.addNode(&n3);
-//    q1.printQueue(&q1);
-//    cout << "test 'getStart' *******" << endl;
-//    q1.getStart();
-//    cout << "test 'popFirstNode' *******" << endl;
-//    q1.popFirstNode();
-//    q1.printQueue(&q1);
+    cout << "test 'addNode' *******" << endl;
+    Node n3("Eve", 50);
+    q1.addNode(&n3);
+    q1.printQueue(&q1);
+    cout << "test 'getStart' *******" << endl;
+    q1.getStart();
+    cout << "test 'popFirstNode' *******" << endl;
+    q1.popFirstNode();
+    q1.printQueue(&q1);
 
 }

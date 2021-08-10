@@ -4,24 +4,33 @@
 #include <string>
 using namespace std;
 
+//Test
+void Targil4();
+
+//Classes
 class Node {
+public:
+    static int idGen;
+
     Node();
-    Node( string name, double account);
+    Node(string name, double account);
     ~Node();
-    void setName() const;
-    void setAccount() const;
+    void setName(string name_str);
+    void setAccount(double account_instance);
+    void setNext(Node *node);
+    int getId();
     Node *getNext();
-    void setNext(Node*);
-    string getName();
-    double getAccount();
+    string getName() const;
+    double getAccount() const;
 private:
-    static int id;
+    int id;
     string name;
     double account;
     Node *Next;
 };
 
 class Queue {
+public:
     Queue();
     Queue( Node* begin, Node* end);
     ~Queue();

@@ -3,6 +3,7 @@
 #include "../Headers/Targil1.h"
 #include "../Headers/Targil2.h"
 #include "../Headers/Targil3.h"
+#include "../Headers/Targil4.h"
 
 using namespace std;
 
@@ -37,8 +38,11 @@ void All () {
             break;
         }
 
-        case 4:
+        case 4:{
+            Targil4();
             break;
+        }
+
 
         case 5:
             break;

@@ -1,8 +1,7 @@
 #ifndef HEADERS_TARGIL4_H
 #define HEADERS_TARGIL4_H
 
-#include <string>
-using namespace std;
+#include <string.h>
 
 //Test
 void Targil4();
@@ -13,18 +12,18 @@ public:
     static int idGen;
 
     Node();
-    Node(string name, double account);
+    Node(const char* name, double account);
     ~Node();
-    void setName(string name_str);
+    void setName(char *name_instance);
     void setAccount(double account_instance);
     void setNext(Node *node);
-    int getId();
+    int getId() const;
     Node *getNext();
-    string getName() const;
+    char* getName() const;
     double getAccount() const;
 private:
     int id;
-    string name;
+    char name[30]{};
     double account;
     Node *Next;
 };
@@ -32,15 +31,18 @@ private:
 class Queue {
 public:
     Queue();
-    Queue( Node* begin, Node* end);
+    Queue(Node *start_node, Node *end_node);
     ~Queue();
-    void addNode();
-    void popFirstNode();
-    void getFirstNode();
-    void isEmpty();
-    void printQueue();
+    Node* getStart();
+    void setStart(Node *node);
+    Node* getEnd();
+    void setEnd(Node *node);
+    void addNode(Node* node);
+    Node popFirstNode();
+    int isEmpty();
+    void printQueue(Queue* queue);
 private:
-    Node *begin, *end;
+    Node *start, *end;
 };
 
 
